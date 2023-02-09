@@ -1,0 +1,51 @@
+@import 'mediaQuery',
+'const';
+@font-face {
+    font-family: 'karrik';
+    src: url(/stylesheets/font/karrik/Karrik-Regular.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+.b-bg {
+    background-color: $black;
+}
+
+.w-bg {
+    background-color: $white;
+}
+
+.b-font {
+    background-color: $black;
+}
+
+.w-font {
+    color: $white;
+}
+
+body {}
+
+.main-index {
+    // overflow-x: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    height: 100%;
+    width: 100%;
+    @include mobile {
+        margin: 0.25rem;
+    }
+}
+
+.main-title {
+    box-sizing: border-box;
+    font-family: 'karrik';
+    @include mobile() {
+        font-size: 15vw;
+    }
+}
+
+#db-name {
+    display: none;
+}

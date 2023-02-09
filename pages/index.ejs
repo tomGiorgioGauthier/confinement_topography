@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topographie confinement</title>
+    <link href="/stylesheets/main.css" rel="stylesheet" />
+</head>
+
+<body class="b-bg">
+    <main class="main-index">
+        <h1 class="main-title w-font">topographie de confinement</h1>
+        <% for( let i = 0; i < dbList.length; ++i ) {
+            let dbName = dbList[i].name %>
+            <a href='/scan_<%= dbName  %>'>
+                <%= dbName %>
+            </a>
+            <% } %>
+    </main>
+</body>
+
+</html>

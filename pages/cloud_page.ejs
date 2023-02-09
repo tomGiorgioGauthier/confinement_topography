@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="db_id" content="mt_ch">
+    <title>topographie</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script> -->
+    <script type="importmap">
+        { "imports": { "three": "/src/Three.js", "three/examples/jsm/controls/TrackballControls":"/jsm/controls/TrackballControls.js"} }
+    </script>
+    <script type="module" src="map.js"></script>
+    <link href="/stylesheets/main.css" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="db-name">
+        <%= dbName %>
+    </p>
+</body>
+
+</html>
