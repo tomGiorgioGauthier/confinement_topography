@@ -8,12 +8,10 @@ const client = new MongoClient(uri);
 module.exports.connection = async function connection(dbFunction) {
     try {
         await client.connect();
-        // console.log('opened');
         return await dbFunction(client);
     } catch (e) {
         console.error(e);
     } finally {
-        // console.log('closed');
         await client.close();
     }
 }
